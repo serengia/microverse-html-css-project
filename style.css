@@ -1,4 +1,12 @@
 body {
-  background-color: blue;
+  background-color: whitesmoke;
   padding: 30px;
+}
+
+.circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  background-color: #333;
+  color: antiquewhite;
 }
