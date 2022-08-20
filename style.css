@@ -1,12 +1,222 @@
-body {
-  background-color: whitesmoke;
-  padding: 30px;
+*::after,
+*::before,
+* {
+  padding: 0;
+  margin: 0;
 }
 
-.circle {
-  width: 50px;
-  height: 50px;
-  border-radius: 25px;
-  background-color: #333;
-  color: antiquewhite;
+html {
+  /* 100% => 16px => 1rem */
+
+  /* 10px => 1rem */
+  /* 10/16*100% => 62.5%*/
+  /* font-size: 10px;  */
+  font-size: 62.5%;
+}
+
+body {
+  background-color: whitesmoke;
+  font-family: "Roboto", sans-serif;
+
+  color: #333;
+}
+
+header {
+  font-size: 1.8rem;
+  height: 9rem;
+  display: flex;
+
+  background-color: #0a66c2;
+  color: #fff;
+
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+.hero {
+  height: 85vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("./img/laptop-01.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.logo {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.header-container {
+  display: flex;
+  width: 100%;
+
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-link {
+  display: flex;
+}
+
+.nav-link {
+  display: flex;
+  gap: 6rem;
+
+  list-style: none;
+}
+
+.row {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+.section-services {
+  padding: 6rem 0;
+}
+.heading-primary {
+  font-size: 6rem;
+  margin-top: -6rem;
+  margin-bottom: 4rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+
+  border-left: 0.4rem solid #0a66c2;
+  padding-left: 2rem;
+}
+
+.heading-secondary {
+  color: #333;
+  font-size: 3rem;
+}
+
+.text-line {
+  padding-bottom: 0.8rem;
+  border-bottom: 2px solid #0a66c2;
+}
+
+.heading-description {
+  font-size: 2.4rem;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  color: #fff;
+
+  align-items: flex-start;
+  justify-content: center;
+}
+
+/* Buttons */
+
+.btn:link,
+.btn:visited {
+  padding: 1.6rem 3.2rem;
+  text-decoration: none;
+  font-size: 1.8rem;
+  border-radius: 0.8rem;
+
+  display: inline-block;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #0f77e0;
+}
+
+.btn-primary {
+  background-color: #0a66c2;
+  color: #fff;
+}
+
+.btn-secondary {
+  font-size: 1.8rem;
+  color: #0a66c2;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.u-margin-top-s {
+  margin-top: 2rem;
+}
+.u-margin-top-m {
+  margin-top: 4rem;
+}
+.u-margin-top-l {
+  margin-top: 6rem;
+}
+
+.services {
+  display: flex;
+  gap: 4rem;
+  margin-top: 4rem;
+
+  justify-content: space-between;
+}
+
+.service {
+  background-color: #e9ecef;
+  flex: 1;
+
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.174);
+}
+
+.service-img {
+  width: 100%;
+}
+
+.service-description {
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.service-title {
+  font-size: 2rem;
+  margin-bottom: 1.2rem;
+}
+
+footer {
+  background-color: #212529;
+  color: rgb(196, 196, 196);
+  padding: 4rem 0;
+}
+
+.footer-links {
+  font-size: 1.8rem;
+  list-style: none;
+  display: flex;
+
+  justify-content: space-between;
+
+  margin-bottom: 4rem;
+}
+.footer-link {
+}
+
+.footer-text {
+  font-size: 1.6rem;
+  border-top: 1px solid #484848;
+  padding-top: 2rem;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-icons {
+  display: flex;
+  gap: 2rem;
+}
+
+.fa-brands {
+  font-size: 2rem;
+  color: #a9a9a9;
+  transition: all 0.3s;
+}
+
+.fa-brands:hover {
+  color: #0a66c2;
 }

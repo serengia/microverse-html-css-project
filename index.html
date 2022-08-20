@@ -4,21 +4,117 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <link rel="stylesheet" href="style.css" />
     <title>Microverse HTML AND CSS</title>
   </head>
   <body>
-    <h1>Land page sample</h1>
-    <hr />
-    <p>
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta beatae
-      tempore iusto labore dolor fugit explicabo debitis, enim eaque ducimus.
-      Quis minus beatae autem dolorem iusto dolor provident ex id mollitia
-      incidunt impedit eveniet ducimus dolorum unde nesciunt, ipsum commodi
-      rerum! Quasi nihil modi voluptas veniam consequatur dolore hic animi!
-    </p>
-    <div class="circle">
-      a circle 
-    </div>
+    <header>
+      <div class="row header-container">
+        <div class="logo">Logo here</div>
+        <nav class="nav">
+          <ul class="nav-link">
+            <li>Home</li>
+            <li>Services</li>
+            <li>Blog</li>
+            <li>About us</li>
+            <li>Contact us</li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="row hero-container">
+          <h1 class="heading-primary">Our main header her</h1>
+          <p class="heading-description">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium
+            dolorem quasi maiores eum a quam.
+          </p>
+
+          <a href="#" class="btn btn-primary u-margin-top-m">Get in touch</a>
+        </div>
+      </section>
+
+      <section class="section-services">
+        <div class="row">
+          <h2 class="heading-secondary text-line">Our Services</h2>
+          <div class="services">
+            <div class="service">
+              <img
+                src="./img/software.jpg"
+                alt="Software dev"
+                class="service-img"
+              />
+              <div class="service-description">
+                <h2 class="service-title">Software Development</h2>
+                <a href="#" class="btn-secondary btn-outline"
+                  >Learn More &rarr;</a
+                >
+              </div>
+            </div>
+            <div class="service">
+              <img
+                src="./img/hosting.jpg"
+                alt="Software dev"
+                class="service-img"
+              />
+              <div class="service-description">
+                <h2 class="service-title">Web Hosting</h2>
+                <a href="#" class="btn-secondary btn-outline"
+                  >Learn More &rarr;</a
+                >
+              </div>
+            </div>
+            <div class="service">
+              <img
+                src="./img/design.jpg"
+                alt="Software dev"
+                class="service-img"
+              />
+              <div class="service-description">
+                <h2 class="service-title">Web Design</h2>
+                <a href="#" class="btn-secondary btn-outline"
+                  >Learn More &rarr;</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="row footer-container">
+        <ul class="footer-links">
+          <li class="footer-link">Home</li>
+          <li class="footer-link">Services</li>
+          <li class="footer-link">About Us</li>
+          <li class="footer-link">Contact us</li>
+        </ul>
+        <div class="footer-text">
+          <p>Sample dummy project. Developed by Agbayemi and Serengia.</p>
+          <div class="social-icons">
+            <i class="fa-brands fa-github"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin"></i>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
